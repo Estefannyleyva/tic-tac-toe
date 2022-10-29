@@ -5,7 +5,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/background.jfif);
+    background: url(../img/01.png);
     background-size: cover;
 }
 .container{
@@ -17,7 +17,6 @@ body{
     align-items: center;
 }
 .tic-tac-toc{
-    background-color: rgba(60, 90, 238, 0.63);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -26,7 +25,7 @@ body{
     height: 300px;
 }   
 .buttons{
-    background-color: rgba(60, 89, 238, 0.585);
+    background-color: rgba(60, 90, 238, 0.314);
     width: 150px;
     height: 100px;
     font-size: 3rem;

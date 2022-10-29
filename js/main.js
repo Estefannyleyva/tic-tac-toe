@@ -28,6 +28,11 @@ function eventoBoton () {
     state.jugadasRestantes --
     ganador(posicionesOcupadas, combinaciones)
     cambioJugador()
+    if(state.turno === 'jugador 2'){
+        let bgo = document.getElementsByTagName('body');
+        bgo.style.backgroundImage = 'url(../img/04.jpg)'
+        console.log(bgo.style.backgroundImage)
+    }
     estadoJuego.innerText = `Turno:${state.turno} 
     Restantes:${state.jugadasRestantes}
     ganador:${state.ganador}
@@ -77,5 +82,6 @@ function resetear() {
     estadoJuego.innerText = ''
     ganadorP.innerText = ''
 }
+
 botones.forEach((boton) => boton.addEventListener('click', eventoBoton));
 reset.addEventListener('click', resetear)
